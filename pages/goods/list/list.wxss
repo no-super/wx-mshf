@@ -1,0 +1,9 @@
+.listWrap{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #eee;
+}
+.listWrap::after{
+  content: '';
+  width: 350rpx;
+}

@@ -1,0 +1,50 @@
+Page{
+  height: 100%;
+}
+.categoryTreeWrap{
+  height: 100%;
+}
+.categoryLeft{
+  width: 160rpx;
+  height: 100%;
+  background-color: #eee;
+}
+.category1{
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.category1.active{
+  background-color: #fff;
+  position: relative;
+}
+.category1.active::after{
+  content: "";
+  width: 5rpx;
+  height: 80%;
+  background-color: red;
+  position: absolute;
+  left: 5%;
+  top:10%
+}
+.categoryRight{
+  width: 590rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.category2List{
+  flex-wrap: wrap;
+}
+.category2Item{
+  width: 33.33%;
+  align-items: center;
+}
+.category2Item image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx 0;
+}
+.category2Item view {
+  font-size: 26rpx;
+}

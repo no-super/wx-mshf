@@ -1,0 +1,7 @@
+<view class="goodsListWrap">
+  <view class="title">{{name}}</view>
+  <view class="list">
+    <goodsCard wx:for="{{goodsList}}" wx:key="id" goods="{{item}}"></goodsCard>
+  </view>
+  <navigator url="/pages/goods/list/list" class="more">查看更多</navigator>
+</view>

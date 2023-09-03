@@ -1,0 +1,172 @@
+/* pages/goods/detail/detail.wxss */
+.good_detail_container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #eee;
+}
+.banner_img {
+  width: 100%;
+  height: 490rpx;
+}
+
+
+.banner_img image{
+  display: block;
+  margin: 0 auto;
+}
+
+/* 商品info */
+.good_info {
+  position: relative;
+  top: -80rpx;
+  background: #fff;
+  padding: 40rpx;
+  border-radius: 40rpx;
+  margin: 0 40rpx;
+}
+
+.price {
+  display: flex;
+}
+
+.price_num {
+  font-size: 36rpx;
+  color: #fa4126;
+  font-weight: bold;
+}
+
+.price_origin_num {
+  font-size: 24rpx;
+  color: #b4babf;
+  margin-left: 4px;
+  text-decoration: line-through;
+  margin-top: 12rpx;
+}
+
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 24rpx;
+  color: #999999;
+}
+
+
+/* 商品detial */
+.good_detail {
+  background: #f0f;
+  padding: 40rpx;
+  border-radius: 40rpx;
+  margin: 40rpx;
+  margin-top: -40rpx;
+}
+
+.good_detail image {
+  width: 100%;
+}
+
+
+/* 底部选项区域 */
+.good_footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 20rpx 0;
+}
+
+
+
+.icon_wrap {
+  flex-direction: column;
+}
+
+.icon_wrap text {
+  font-size: 20rpx;
+  color: #666;
+}
+
+.bottom_left {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* 底部右侧 */
+.bottom_right view {
+  width: 254rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  
+}
+
+.add_shop_cart {
+  background: #ffece9;
+  color:#fa4126;
+  border-radius: 40rpx 0 0 40rpx;
+}
+
+.buy_now {
+  background-color: #fa4126;
+  border-radius: 0rpx 40rpx 40rpx 0rpx;
+  color: #fff;
+}
+
+
+/* 祝福语弹窗区域 */
+
+.sheet_wrapper {
+  padding: 40rpx;
+}
+.sheet_wrapper .goods_item {
+  height: 250rpx;
+  align-items:flex-end;
+}
+
+.goods_item .mid {
+  width: 228rpx;
+  height: 250rpx;
+
+}
+
+.goods_item .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 40rpx;
+  flex: 1;
+}
+
+.info .price {
+  color: #fa4126;
+}
+
+.buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+/* 祝福语 */
+
+.time-wraper {
+  margin: 40rpx 0;
+}
+.form-textarea {
+  border-radius: 24rpx;
+  background-color: #f7f8fa;
+  padding: 32rpx 24px;
+  font-size: 13px;
+  margin-top: 24rpx;
+  width: 94%;
+  height: 168rpx;
+}

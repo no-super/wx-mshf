@@ -1,0 +1,56 @@
+<!-- cart 购物车 -->
+<view class="container cart_list_container">
+  <block wx:if="{{cartList.length}}">
+    <!-- 购物车列表 -->
+    <view class="cart_list">
+      <view class="cart_item flex" wx:for="{{cartList}}" wx:key="goodsId">
+        <!-- 左侧选项卡 -->
+        <view class="check">
+          <van-checkbox data-goodsid="{{item.goodsId}}" data-ischecked="{{item.isChecked}}" bindtap="changeCheck" checked-color="#FA4126" value="{{item.isChecked}}"></van-checkbox>
+        </view>
+
+        <!-- 中间商品图 -->
+        <view class="shop_img">
+          <image class="img" src="{{item.imageUrl}}"></image>
+        </view>
+
+        <!-- 右侧商品信息 -->
+        <view class="shop_info flex">
+          <view class="title">{{item.name}}</view>
+          <view class="buy flex">
+            <view class="price">￥ {{item.price}}</view>
+            <view class="buy_btn flex">
+              <van-icon data-goodsid="{{item.goodsId}}" bindtap="deleteOne" size="18px" color="#71797f" name="delete" class="del" />
+              <van-stepper data-goodsId="{{item.goodsId}}" data-count="{{item.count}}" bindchange="changCount" value="{{item.count}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <!-- 底部结算 -->
+    <view class="submit_footer flex">
+      <view class="check">
+        <van-checkbox bindtap="checkAllHandle" checked-color="#FA4126" value="{{isAllCheck}}">
+          全选
+        </van-checkbox>
+      </view>
+
+      <view class="right flex">
+        <view class="total-wrapper">
+          <text>合计：</text>
+          <text class="total-price">¥ {{totalPrice}}</text>
+        </view>
+        <view class="total-count">
+          <van-button size="small" color="linear-gradient(to right, rgb(255, 96, 52), rgb(238, 10, 36))" round>
+            去结算({{totalCount}})
+          </van-button>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 空的购物车 -->
+  <van-empty wx:else description="还没有添加商品，快去添加吧～" />
+
+</view>

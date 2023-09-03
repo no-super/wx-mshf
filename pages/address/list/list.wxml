@@ -1,0 +1,38 @@
+<!--pages/address/list/index.wxml-->
+
+<view class="container address-list">
+
+	<view wx:if="{{addressList.length}}" class="list-warpper">
+		<view class="title">我的收货地址</view>
+		<view class="list-item flex" wx:for="{{addressList}}" wx:key="id">
+			<view class="info">
+				<view class="address-info">
+					<text>{{item.fullAddress}}</text>
+					<text wx:if="{{item.isDefault}}" class="default-tag">默认</text>
+				</view>
+				<view class="user-info">
+					<view class="tag">{{item.tagName}}</view>
+					<text>{{item.name}} {{item.phone}}</text>
+				</view>
+			</view>
+			<view class="edit-address">
+				<van-icon
+				 class="edit"
+				 name="edit"
+				 size="22px"
+				 color="#999"
+				/>
+				<van-icon name="delete" size="22px" color="#999" />
+			</view>
+		</view>
+	</view>
+	<van-empty wx:else description="还没有收获地址，快去添加吧～" />
+	<view class="footer">
+		<view class="btn">
+			<navigator url="/pages/address/add/add" open-type="navigate">
+				新建地址
+			</navigator>
+		</view>
+	</view>
+</view>
+

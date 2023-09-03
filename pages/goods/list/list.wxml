@@ -1,0 +1,10 @@
+<block wx:if="{{goodsPageList.length}}">
+  <view class="listWrap flex">
+    <goodsCard wx:for="{{goodsPageList}}" wx:key="id" goods="{{item}}"></goodsCard>
+  </view>
+  <van-divider wx:if="{{status === 'nomore'}}" customStyle="color: #aaa;font-size: 30rpx;padding-bottom:30rpx" contentPosition="center">没有更多啦</van-divider>
+</block>
+
+<van-empty wx:else="" description="当前没有更多商品，去查看其他商品吧">
+  <van-button round type="danger" class="bottom-button">查看其他商品</van-button>
+</van-empty>

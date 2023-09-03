@@ -1,0 +1,21 @@
+<view class="indexWrap">
+  <!-- 轮播图 -->
+  <swiper class="banners" indicator-dots indicator-color="#fff" indicator-active-color="#FF734C" autoplay circular>
+    <swiper-item wx:for="{{banners}}" wx:key="id">
+      <image src="{{item.imageUrl}}" mode="widthFix"/>
+    </swiper-item>
+   
+  </swiper>
+  <!-- 列表 -->
+  <view class="categoryList flex">
+    <view class="categoryItem {{index > 4?'active': ''}} flexC" wx:for="{{categoryList}}" wx:key="id">
+      <image src="{{item.imageUrl}}"/>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+  <!-- 广告 -->
+  <image class="adImg" src="https://img02.hua.com/zhuanti/valentine/2023/23_valentine_mbanner_m.png?a1" mode="widthFix"/>
+  <!-- 猜你喜欢与人气推荐 -->
+  <goodsList name="猜你喜欢" goodsList="{{likeList}}"></goodsList>
+  <goodsList name="人气推荐" goodsList="{{recommendList}}"></goodsList>
+</view>

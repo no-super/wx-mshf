@@ -1,0 +1,38 @@
+<!--pages/address/list/index.wxml-->
+
+<view class="container address-list">
+
+	<view class="list-warpper">
+		<view class="title">我的收货地址</view>
+		<view class="list-item flex">
+			<view class="info">
+				<view class="address-info">
+					<text>北京市昌平区</text>
+					<text wx:if="{{true}}" class="default-tag">默认</text>
+				</view>
+				<view class="user-info">
+					<view class="tag">尚硅谷</view>
+					<text>北京校区 010 88888888</text>
+				</view>
+			</view>
+			<view class="edit-address">
+				<van-icon
+				 class="edit"
+				 name="edit"
+				 size="22px"
+				 color="#999"
+				/>
+				<van-icon name="delete" size="22px" color="#999" />
+			</view>
+		</view>
+	</view>
+	<van-empty description="还没有收获地址，快去添加吧～" />
+	<view class="footer">
+		<view class="btn">
+			<navigator url="/pages/address/add/add" open-type="navigate">
+				新建地址
+			</navigator>
+		</view>
+	</view>
+</view>
+

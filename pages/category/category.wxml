@@ -1,0 +1,14 @@
+<view class="categoryTreeWrap flex">
+  <scroll-view 	scroll-y="true" class="categoryLeft">
+    <view data-index="{{index}}" bindtap="selectTree" class="category1 {{currentIndex === index ? 'active':''}}" wx:for="{{category1List}}" wx:key="id">{{item.name}}</view>
+  </scroll-view>
+  <view class="categoryRight">
+    <view class="title">{{currentTree.name}}</view>
+    <view class="category2List flex">
+      <navigator url="/pages/goods/list/list?category2Id={{item.id}}" class="category2Item flexC" wx:for="{{currentTree.children}}" wx:key="id">
+        <image src="{{item.imageUrl}}" />
+        <view>{{item.name}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>

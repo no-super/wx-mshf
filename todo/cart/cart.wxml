@@ -1,0 +1,74 @@
+<!-- cart 购物车 -->
+<view class="container cart_list_container">
+  <!-- 购物车列表 -->
+  <view class="cart_list">
+    <view class="cart_item flex">
+      <!-- 左侧选项卡 -->
+      <view class="check">
+        <van-checkbox checked-color="#FA4126" value="true"></van-checkbox>
+      </view>
+
+      <!-- 中间商品图 -->
+      <view class="shop_img">
+        <image class="img" src="http://39.98.123.211:8300/images/1-1-1.png"></image>
+      </view>
+
+      <!-- 右侧商品信息 -->
+      <view class="shop_info flex">
+        <view class="title">爱的供养</view>
+        <view class="buy flex">
+          <view class="price">￥ 123</view>
+          <view class="buy_btn flex">
+            <van-icon size="18px" color="#71797f" name="delete" class="del" />
+            <van-stepper value="1" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="cart_item flex">
+      <!-- 左侧选项卡 -->
+      <view class="check">
+        <van-checkbox checked-color="#FA4126" value="true"></van-checkbox>
+      </view>
+
+      <!-- 中间商品图 -->
+      <view class="shop_img">
+        <image class="img" src="http://39.98.123.211:8300/images/1-1-1.png"></image>
+      </view>
+
+      <!-- 右侧商品信息 -->
+      <view class="shop_info flex">
+        <view class="title">爱的供养</view>
+        <view class="buy flex">
+          <view class="price">￥ 123</view>
+          <view class="buy_btn flex">
+            <van-icon size="18px" color="#71797f" name="delete" class="del" />
+            <van-stepper value="1" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 空的购物车 -->
+  <!-- <van-empty description="还没有添加商品，快去添加吧～" /> -->
+  <!-- 底部结算 -->
+  <view class="submit_footer flex">
+    <view class="check">
+       <van-checkbox checked-color="#FA4126" value="true">
+        全选
+      </van-checkbox>
+    </view>
+
+    <view class="right flex">
+      <view class="total-wrapper">
+        <text>合计：</text>
+        <text class="total-price">¥ 123</text>
+      </view>
+      <view class="total-count">
+        <van-button size="small" color="linear-gradient(to right, rgb(255, 96, 52), rgb(238, 10, 36))" round >
+          去结算(5)
+        </van-button>
+      </view>
+    </view>
+  </view>
+</view>

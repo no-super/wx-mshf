@@ -1,0 +1,75 @@
+/* pages/cart/cart.wxss */
+.cart_list_container {
+  height: 100%;
+}
+
+.cart_list {
+  padding-bottom: 150rpx;
+}
+.cart_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+  align-items: center;
+}
+
+.cart_item .check {
+  width: 112rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart_item .shop_img {
+  width: 228rpx;
+  height: 250rpx;
+}
+
+.cart_item .shop_img .img {
+  height: 100%;
+  width: 100%;
+}
+
+.shop_info {
+  height: 250rpx;
+  flex-direction: column;
+  margin-left: 20rpx;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.buy {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buy .price {
+  color: #fa4126;
+}
+
+
+/* 底部结算 */
+.submit_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  height: 100rpx;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.submit_footer .right {
+  margin: 0 20rpx;
+}
+.total-price {
+  color: #ee0a24;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 4px;
+}
+
+.total-count {
+  margin: 0 10rpx;
+}

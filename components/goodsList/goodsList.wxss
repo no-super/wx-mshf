@@ -1,0 +1,23 @@
+.title{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-weight: 600;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.list::after{
+  content: '';
+  width: 350rpx;
+}
+.more{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+  background-color: #fff;
+}

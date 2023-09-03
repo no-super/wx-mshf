@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "goodsCard":"/components/goodsCard/goodsCard",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

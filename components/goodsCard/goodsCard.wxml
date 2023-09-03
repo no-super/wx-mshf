@@ -1,0 +1,12 @@
+<navigator url="/pages/goods/detail/detail?goodsId={{goods.id}}" class="cardWrap">
+  <image class="img" src="{{goods.imageUrl}}" mode="widthFix"/>
+  <view class="info">
+    <view class="title">{{goods.name}}</view>
+    <view class="desc">{{goods.floralLanguage}}</view>
+    <view class="priceArea">
+      <view class="nowPrice">￥  {{goods.price}}</view>
+      <view class="oldPrice">￥  {{goods.marketPrice}}</view>
+      <image data-id="{{goods.id}}" bindtap="addCart" class="cart" src="https://img02.hua.com/m/home/img/home_buy_btn.png "/>
+    </view>
+  </view>
+</navigator>

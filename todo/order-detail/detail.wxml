@@ -1,0 +1,78 @@
+<!-- 订单详情 -->
+<view class="order_detail_container">
+  <!-- 地址管理 -->
+  <view class="address_card">
+    <!-- 用户没有默认地址 -->
+    <!-- <navigator class="flex nav" url="/pages/address/address" hover-class="navigator-hover" open-type="navigate">
+      <van-icon size="22px" name="add" />
+      <view class="title_text">添加收货人地址</view>
+    </navigator> -->
+    <!-- 用户有默认地址，显示默认地址 -->
+    <navigator class="flex nav nav_address" url="/pages/address/address" hover-class="navigator-hover" open-type="navigate">
+      <view class="address_content">
+        <view class="address_title">北京市昌平区</view>
+        <view class="address_full">宏福科技园</view>
+        <view class="info">
+          <text class="username">高启强</text>
+          <text class="phone">13855555555</text>
+        </view>
+      </view>
+      <van-icon color="#BBBBBB" name="arrow" size="22px" />
+    </navigator>
+    <view class="top_line"></view>
+  </view>
+  <!-- 订购人信息 -->
+  <van-cell-group>
+    <van-field label-class="filed-label" label="订购人姓名" placeholder="订购人的姓名" ></van-field>
+    <van-field label-class="filed-label"  label="订购人手机号" type="number" maxlength="11" placeholder="订购人的手机号" />
+    <van-cell title="期望送达日期" is-link  bindtap='handleShowPopup'/>
+    <van-cell title="订单备注" border="{{false}}" use-label-slot>
+      <!-- model:value可以实现双向数据绑定 变量名不能定义为简单的 a b c等 -->
+      <textarea slot="label" class="form-textarea" placeholder="写上您的祝福语，“署名处”为选填，如未填写，虚线框区域不会打印在贺卡上（请勿填写特殊符号或表情符号）" name="textarea" />
+    </van-cell>
+  </van-cell-group>
+  <!-- 商品列表信息 -->
+  <view class="goods_wrapper">
+    <view class="goods_list">
+      <view class="goods_item">
+        <view class="img">
+          <image src="https://img01.hua.com/uploadpic/newpic/9012519.jpg_220x240.jpg" />
+        </view>
+        <view class="content">
+          <view class="goods_title">台湾鲜花，红玫瑰18朵</view>
+          <view class="goods_price">1888</view>
+        </view>
+        <view class="num">
+          <van-stepper value="1" />
+        </view>
+      </view>
+      <view class="goods_item">
+        <view class="img">
+          <image src="https://img01.hua.com/uploadpic/newpic/9012519.jpg_220x240.jpg" />
+        </view>
+        <view class="content">
+          <view class="goods_title">台湾鲜花，红玫瑰18朵</view>
+          <view class="goods_price">1888</view>
+        </view>
+        <view class="num">
+          <van-stepper value="1" />
+        </view>
+      </view>
+    </view>
+    <!-- 支付方式 -->
+    <view class="time-wraper flex">
+      <image src="https://img02.hua.com/m/images/m_payment_wxzf.png" />
+      <view class="title">支付方式</view>
+      <van-checkbox value="{{true}}"></van-checkbox>
+    </view>
+  </view>
+  <!-- 底部结算 -->
+  <view class="footer flex">
+    <view class="left">¥ 123</view>
+    <viwe class="right">去结算</viwe>
+  </view>
+  <!-- 日期选项卡 -->
+  <van-popup round position="bottom" custom-style="height: 50%" >
+    <van-datetime-picker type="date" title='今天是个好日子'/>
+  </van-popup>
+</view>

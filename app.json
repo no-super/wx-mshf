@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/person/person",
+    "pages/goods/list/list",
+    "pages/goods/detail/detail",
+    "pages/login/login",
+    "pages/order/detail/detail",
+    "pages/address/list/list",
+    "pages/address/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9C0211",
+    "navigationBarTitleText": "卖鲜花",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/tabbar/home-icon1.png",
+        "selectedIconPath": "/static/tabbar/home-icon1-1.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "/static/tabbar/home-icon2.png",
+        "selectedIconPath": "/static/tabbar/home-icon2-2.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/static/tabbar/home-icon3.png",
+        "selectedIconPath": "/static/tabbar/home-icon3-3.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "/static/tabbar/home-icon4.png",
+        "selectedIconPath": "/static/tabbar/home-icon4-4.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
